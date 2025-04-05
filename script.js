@@ -1,4 +1,8 @@
 function toCase(text) {
+	text = text.trim();
+	if(!text){
+		return;
+	}
 	let newStr = text + '-' + text.toUpperCase();
 	return newStr;
 }
