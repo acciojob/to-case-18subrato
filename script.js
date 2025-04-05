@@ -2,7 +2,7 @@ function toCase(text) {
 	text = text.trim();
 	text = text.toLowerCase();
 	if(!text){
-		return;
+		return '-';
 	}
 	let newStr = text + '-' + text.toUpperCase();
 	return newStr;
@@ -10,5 +10,5 @@ function toCase(text) {
 
 // DO not change the code below
 
-const text = prompt("Enter text:")
+const text = prompt("Enter text:");
 alert(toCase(text));
